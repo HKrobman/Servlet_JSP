@@ -1,4 +1,4 @@
-package tools;
+package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,9 +16,13 @@ public class Controller extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		try {
-			String path = request.getServletPath().substring(1);
-			String name = path.replace(".a", "A").replace('/', '.');
-			Action action = (Action) Class.forName(name).newInstance();
+			String path = request.getServletPath(); //.substring(1);
+			/* Login.actionpathでアクセスした場合
+			 * pathには /Login.action が格納される
+			 * 以下のreplaceメソッドによって nameには service.LoginAction が格納される。
+			 */
+			String name = path.replace(".a", "A").replace("/", "service.");
+			Action action = (Action)Class.forName(name).newInstance();
 			String url = action.execute(request, response);
 			request.getRequestDispatcher(url).forward(request, response);
 		}catch (Exception e) {

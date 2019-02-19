@@ -3,11 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<title>Success</title>
-
-
+<title>LOGOUT_ERROR</title>
 <style type="text/css">
 body {
   margin: 0;
@@ -39,7 +37,6 @@ body {
 }
 
 </style>
-
 </head>
 <body>
   <div id="header">
@@ -47,14 +44,8 @@ body {
   </div>
   <div id="main">
     <div id="top">
-      <h1>Hello! ${login_user.userName}さん</h1>
-      <p>Loginに成功しました!</p>
+      <h1>ログアウト済みです。</h1>
     </div>
-    <div>
-        <p>
-          Logoutは <a href="Logout.action">こちら</a>
-        </p>
-      </div>
-    </div>
+  </div>
 </body>
 </html>

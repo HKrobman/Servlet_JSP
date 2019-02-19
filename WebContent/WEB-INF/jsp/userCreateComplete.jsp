@@ -4,8 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Complete</title>
-
+<title>CREATE_COMPLETE</title>
 <style type="text/css">
 body {
   margin: 0;
@@ -48,7 +47,7 @@ body {
     </div>
     <div>
         <p>
-          Loginは <a href="login.jsp">こちら</a>
+          Loginは <a href="/Servlet-JSP-lesson/login">こちら</a>
         </p>
       </div>
     </div>

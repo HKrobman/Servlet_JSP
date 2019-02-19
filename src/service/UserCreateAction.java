@@ -1,10 +1,10 @@
-package login_logout_lesson;
+package service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import controller.Action;
 import dao.UserCreateDAO;
-import tools.Action;
 
 public class UserCreateAction extends Action {
 	public String execute(
@@ -15,9 +15,9 @@ public class UserCreateAction extends Action {
 			if( !(userName.equals("")) &&  !(password.equals("")) ) {
 				UserCreateDAO userCreateDAO = new UserCreateDAO();
 				userCreateDAO.createUser(userName, password);
-				return "userCreateComplete.jsp";
+				return "/WEB-INF/jsp/userCreateComplete.jsp";
 			}else {
-				return "userCreateError.jsp";
+				return "/WEB-INF/jsp/userCreateError.jsp";
 			}
 		}
 }

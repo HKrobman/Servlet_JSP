@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>ERROR</title>
-
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Success</title>
 <style type="text/css">
 body {
   margin: 0;
@@ -37,20 +37,22 @@ body {
 }
 
 </style>
+
 </head>
 <body>
-<div id="header">
+  <div id="header">
     <div id="pr"></div>
   </div>
   <div id="main">
     <div id="top">
-      <p>Login</p>
+      <h1>Hello! ${login_user.userName}さん</h1>
+      <p>Loginに成功しました!</p>
     </div>
     <div>
-      <h1>ユーザー登録に失敗しました。</h1>
-      <p>ユーザー名またはパスワードの入力を確認してください</p>
-      <p><a href=userCreate.jsp> ユーザー登録画面に戻る</a></p>
+        <p>
+          Logoutは <a href="Logout.action">こちら</a>
+        </p>
+      </div>
     </div>
-  </div>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+  pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<title>ERROR</title>
+<title>Home</title>
 
 <style type="text/css">
 body {
@@ -45,8 +45,9 @@ body {
   </div>
   <div id="main">
     <div id="top">
-      <h1>ログアウト済みです。</h1>
+      <p>JSP Servlet課題</p>
     </div>
-  </div>
+    <p>ログインは<a href="/Servlet-JSP-lesson/login">こちら</a></p>
+   </div>
 </body>
 </html>

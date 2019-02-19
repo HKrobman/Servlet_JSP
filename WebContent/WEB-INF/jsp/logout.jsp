@@ -49,7 +49,7 @@ body {
     </div>
     <div>
       <p>
-        Loginは <a href="login.jsp">こちら</a>
+        Loginは <a href="/Servlet-JSP-lesson/login">こちら</a>
       </p>
     </div>
   </div>

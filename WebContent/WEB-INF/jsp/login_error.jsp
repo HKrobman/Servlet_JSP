@@ -5,12 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Sctipt-Type" content="text/javascript" />
-<meta http-equiv="imagetoolbar" content="no" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<title>ERROR</title>
-
+<title>LOGIN_ERROR</title>
 <style type="text/css">
 body {
 	margin: 0;
@@ -54,8 +49,8 @@ body {
 		<div>
 		  <h1>ログインに失敗しました。</h1>
 		  <p>ログイン名またはパスワードが違います</p>
-		  <p><a href=login.jsp>ログイン画面に戻る</a></p>
-		  <p>新規ユーザー登録は <a href="userCreate.jsp">こちら</a></p>
+		  <p><a href="/Servlet-JSP-lesson/login">ログイン画面に戻る</a></p>
+		  <p>新規ユーザー登録は <a href="/Servlet-JSP-lesson/userCreate">こちら</a></p>
 			</div>
 	</div>
 </body>

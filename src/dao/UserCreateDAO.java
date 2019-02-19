@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import dbconnector.DBConnector;
-import tools.DateUtil;
+import util.DateUtil;
 
 public class UserCreateDAO {
 

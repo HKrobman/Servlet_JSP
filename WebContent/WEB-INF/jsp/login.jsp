@@ -5,12 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Sctipt-Type" content="text/javascript" />
-<meta http-equiv="imagetoolbar" content="no" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
 <title>Login</title>
-
 <style type="text/css">
 body {
 	margin: 0;
@@ -52,19 +47,16 @@ body {
 			<p>Login</p>
 		</div>
 		<div>
-			<form action="Login.action" method="post">
+			<form method="post" action="Login.action">
 				<p>ユーザー名<input type="text" name="user_name"></p>
 				<p>パスワード<input type="password" name="password"></p>
 				<p><input type="submit" value="ログイン"></p>
 			</form>
 			<br />
-			<div id="text-link">
 				<p>
-					新規ユーザー登録は <a href="userCreate.jsp">こちら</a>
+					新規ユーザー登録は <a href="/Servlet-JSP-lesson/userCreate">こちら</a>
 				</p>
 			</div>
 		</div>
-	</div>
-
 </body>
 </html>
