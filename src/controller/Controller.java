@@ -16,10 +16,11 @@ public class Controller extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		try {
-			String path = request.getServletPath(); //.substring(1);
-			/* Login.actionpathでアクセスした場合
+			String path = request.getServletPath();
+			/* 例:
+			 * Login.actionでアクセスした場合
 			 * pathには /Login.action が格納される
-			 * 以下のreplaceメソッドによって nameには service.LoginAction が格納される。
+			 * 以下のreplaceメソッドによってnameには service.LoginAction が格納される。
 			 */
 			String name = path.replace(".a", "A").replace("/", "service.");
 			Action action = (Action)Class.forName(name).newInstance();

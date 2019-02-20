@@ -11,15 +11,16 @@ import dao.LoginDAO;
 
 public class LoginAction extends Action {
 	public String execute(
-		HttpServletRequest request, HttpServletResponse response
-	) throws Exception{
+		HttpServletRequest request, HttpServletResponse response) throws Exception{
 		HttpSession session = request.getSession();
 
 		String userName = request.getParameter("user_name");
 		String password = request.getParameter("password");
+
 		if(userName.equals("") || password.equals("")) {
 			return "/WEB-INF/jsp/login_error.jsp";
 		}
+
 		LoginDAO loginDAO = new LoginDAO();
 		LoginUser loginUser = loginDAO.search(userName, password);
 

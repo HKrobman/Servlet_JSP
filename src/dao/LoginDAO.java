@@ -30,6 +30,7 @@ public class LoginDAO {
 				loginUser.setPassword(resultSet.getString("password"));
 
 			}
+
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
