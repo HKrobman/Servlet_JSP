@@ -14,7 +14,7 @@
 			<p>Login</p>
 		</div>
 		<div>
-			<form method="post" action="Login.action">
+			<form method="post" action="Login.service">
 				<p>ユーザー名<input type="text" name="user_name"></p>
 				<p>パスワード<input type="password" name="password"></p>
 				<p><input type="submit" value="ログイン"></p>

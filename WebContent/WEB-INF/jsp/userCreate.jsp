@@ -14,7 +14,7 @@
 			<p>ユーザー登録</p>
 		</div>
 		<div>
-			<form action="UserCreate.action" method="post">
+			<form action="UserCreate.service" method="post">
 				<p>ユーザー名<input type="text" name="user_name"></p>
 				<p>パスワード<input type="password" name="password"></p>
 				<p><input type="submit" value="登録"></p>

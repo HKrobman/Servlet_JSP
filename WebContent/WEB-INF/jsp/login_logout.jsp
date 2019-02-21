@@ -15,7 +15,7 @@
 			<p>Loginに成功しました!</p>
 		</div>
 		<div>
-			<p>Logoutは <a href="Logout.action">こちら</a></p>
+			<p>Logoutは <a href="Logout.service">こちら</a></p>
 		</div>
 	</div>
 </body>

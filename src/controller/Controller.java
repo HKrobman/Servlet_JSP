@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import service.ServiceBase;
 
-@WebServlet(urlPatterns= {"*.action"})
+@WebServlet(urlPatterns= {"*.service"})
 public class Controller extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,7 +24,7 @@ public class Controller extends HttpServlet {
 			 * pathには /Login.action が格納される
 			 * 以下のreplaceメソッドによってnameには service.LoginAction が格納される。
 			 */
-			String name = path.replace(".a", "A").replace("/", "service.");
+			String name = path.replace(".s", "S").replace("/", "service.");
 			ServiceBase action = (ServiceBase)Class.forName(name).newInstance();
 			String url = action.execute(request, response);
 			request.getRequestDispatcher(url).forward(request, response);
