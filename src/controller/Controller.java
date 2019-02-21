@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import service.ServiceBase;
+
 @WebServlet(urlPatterns= {"*.action"})
 public class Controller extends HttpServlet {
 
@@ -23,7 +25,7 @@ public class Controller extends HttpServlet {
 			 * 以下のreplaceメソッドによってnameには service.LoginAction が格納される。
 			 */
 			String name = path.replace(".a", "A").replace("/", "service.");
-			Action action = (Action)Class.forName(name).newInstance();
+			ServiceBase action = (ServiceBase)Class.forName(name).newInstance();
 			String url = action.execute(request, response);
 			request.getRequestDispatcher(url).forward(request, response);
 		}catch (Exception e) {

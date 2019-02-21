@@ -3,10 +3,9 @@ package service;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.Action;
 import dao.UserCreateDAO;
 
-public class UserCreateAction extends Action {
+public class UserCreateService extends ServiceBase {
 	public String execute(
 			HttpServletRequest request, HttpServletResponse response
 		) throws Exception{
