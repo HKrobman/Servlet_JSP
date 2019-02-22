@@ -20,9 +20,9 @@ public class Controller extends HttpServlet {
 		try {
 			String path = request.getServletPath();
 			/* 例:
-			 * Login.actionでアクセスした場合
-			 * pathには /Login.action が格納される
-			 * 以下のreplaceメソッドによってnameには service.LoginAction が格納される。
+			 * Login.serviceでアクセスした場合
+			 * pathには /Login.service が格納される
+			 * 以下のreplaceメソッドによってnameには service.LoginService が格納される。
 			 */
 			String name = path.replace(".s", "S").replace("/", "service.");
 			ServiceBase action = (ServiceBase)Class.forName(name).newInstance();
