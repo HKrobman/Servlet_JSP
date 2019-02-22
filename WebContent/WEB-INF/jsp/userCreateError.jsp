@@ -11,10 +11,9 @@
 	<div id="header"></div>
 	<div id="main">
 		<div id="top">
-			<p>Login</p>
+			<h1>ユーザー登録に失敗しました。</h1>
 		</div>
 		<div>
-			<h1>ユーザー登録に失敗しました。</h1>
 			<p>ユーザー名またはパスワードの入力を確認してください</p>
 			<p><a href=/Servlet-JSP-lesson/userCreate> ユーザー登録画面に戻る</a></p>
 		</div>
