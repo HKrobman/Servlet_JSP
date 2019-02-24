@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import service.ServiceBase;
 
 @WebServlet(urlPatterns= {"*.service"})
-public class Controller extends HttpServlet {
+public class ServiceController extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=UTF-8");

@@ -28,7 +28,6 @@ public class LoginDAO {
 				loginUser.setId(resultSet.getInt("id"));
 				loginUser.setUserName(resultSet.getString("user_name"));
 				loginUser.setPassword(resultSet.getString("password"));
-
 			}
 
 		}catch(Exception e) {

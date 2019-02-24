@@ -11,6 +11,7 @@ public class UserCreateService extends ServiceBase {
 		) throws Exception{
 			String userName = request.getParameter("user_name");
 			String password = request.getParameter("password");
+			
 			if( !(userName.equals("")) &&  !(password.equals("")) ) {
 				UserCreateDAO userCreateDAO = new UserCreateDAO();
 				userCreateDAO.createUser(userName, password);
